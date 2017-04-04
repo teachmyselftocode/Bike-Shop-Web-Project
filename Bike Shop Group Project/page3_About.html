@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="image/Different-Honda-Logo.png" style="width:45%;" class="w3-round" alt="honda logo"><br><br>
+    <h4 class="w3-padding-0"><b>The Power of Dreams</b></h4>
+    <p class="w3-text-grey">Jay's Group <br></p>
+  </div>
+  <a href="page1_Home_Page_v2.html" class="w3-padding">HOME</a>
+  <a href="page3_About.html" class="w3-padding w3-text-teal ">ABOUT</a>
+  <a href="page5_Login.html" class="w3-padding">LOGIN</a>
+  <a href="page2_Super_Sport.html" class="w3-padding ">SHOP</a>
+  <a href="page4_Contact.html" class="w3-padding">CONTACT</a>
+   
+  <div class="w3-section w3-padding-top w3-large">
+    <a href="https://www.facebook.com/HondaMotoUK/" target="_blank" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.youtube.com/user/HondaMotorcyclesEU" target="_blank" class="w3-hover-white w3-hover-text-red w3-show-inline-block"><i class="fa fa-youtube"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-grey w3-show-inline-block"><i class="fa fa-google-plus"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-whatsapp"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-grey w3-show-inline-block"><i class="fa fa-wechat"></i></a>
+  </div>
+  
+  <audio controls autoplay>
+  <source src="audio/Tomorrow-calm-new-age-ambient-track.mp3" type="audio/ogg">
+  <source src="audio/Tomorrow-calm-new-age-ambient-track.mp3" type="audio/mpeg">
+  </audio>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header class="w3-container">
+    <a href="page1_Home_Page_v2.html"><img src="image/Different-Honda-Logo.png" style="width:65px;" class="w3-round w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <h1 style="color:green"><b>About Honda Motorcycle</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right" style="color:blue">Sharing Joys with Customers around the World:</span>
+    </div>
+  </header>
+  
+  <!-- About Honda Motorcycle description-->
+  <table>
+         <td> <img src="image/about-honda-motorcycle-01.gif"></td>
+         <td>
+<p> <h5>To bring everyone the Joy and Freedom of Mobility</h5> <br>
+After World War II, the use of auxiliary engines mounted on bicycles spread quickly in Japan, making it easier for people to move around and transport goods. This was the starting point of manufacturing for Honda. Ever since, Honda has given shape to wide-ranging joys and the fun of riding on two wheels, through such products as the Super Cub, which went on to become the standard in commuter models, and the Dream CB750 Four, which triggered an unprecedented sports bike boom across Japan. Making motorcycles with the basic goal of bringing joy and satisfaction to people serves as the starting point of Honda.</p></td>
+  </table>
+
+
+  <!-- Second Photo Grid-->
+ <hr color="green">
+ <div class="w3-container">
+  <h2>Product History</h2>
+  <p>From 1949 to 2014</p>
+</div>
+
+<div class="w3-content" style="max-width:400px">
+
+  <img class="mySlides" src="image/about-honda-motorcycle-product-history-01.jpg" style="width:100%">
+  <img class="mySlides" src="image/honda-motorcycle-product-history-02.jpg" style="width:100%">
+  <img class="mySlides" src="image/honda-motorcycle-product-history-03.jpg" style="width:100%">
+  <img class="mySlides" src="image/honda-motorcycle-product-history-04.jpg" style="width:100%">
+  <img class="mySlides" src="image/honda-motorcycle-product-history-05.jpg" style="width:100%">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-btn" onclick="plusDivs(-1)">&lsaquo; Prev</button>
+    <button class="w3-btn" onclick="plusDivs(1)">Next &rsaquo;</button>
+  </div>
+  <button class="w3-btn demo" onclick="currentDiv(1)">1949</button>
+  <button class="w3-btn demo" onclick="currentDiv(2)">1958</button>
+  <button class="w3-btn demo" onclick="currentDiv(3)">1969</button>
+  <button class="w3-btn demo" onclick="currentDiv(4)">1992</button>
+  <button class="w3-btn demo" onclick="currentDiv(5)">2014</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+
+
+  <!-- Third description-->
+  <hr>
+  <div class="w3-container">
+  <h2>Expanding our Manufacturing Network across the World</h2>
+  <p>With the vision of &ldquo;bringing the convenience and fun of a motorcycle to as many people as possible,&rdquo; Honda made an early start in the sales and production of motorcycles outside of Japan, and then quickly expanded its international operations. According to the principle of &ldquo;building products close to the customer,&rdquo; we have developed manufacturing operations globally that are rooted in each country and region. In recent years, Honda has introduced a new manufacturing approach in emerging coun- tries, building plants with simple facilities in a short timeframe and conducting only final assembly there. In this way, we have started mass production of the CD80 in Bangladesh and the Ace CB125 in Kenya. In September 2014, Honda achieved cumulative global production of 300 million motorcycles.</p>
+</div>
+ 
+ 
+ 
+ <!-- 4 description-->
+ <hr>
+ <div class="w3-container">
+  <h2>Bringing the fun of small motorcycles to the next era and beyond</h2>
+  <table>
+         <td> <img src="image/about-honda-motorcycle-04.jpg"></td>
+         <td>
+<p> A large number of people around the world currently ride Honda&rsquo;s small motorcycles. We are now installing on a wide range of models the &ldquo;eSP&rdquo; engine, our new-generation global engine that achieves both excellent riding performance and fuel efficiency. Honda will continue expanding our lineup by offering a succession of new models demonstrating unique individual character that are also environmentally-responsible, such as the PCX with its cutting-edge styling design and the Tact scooter that is very practical for daily use.</p></td>
+  </table></div>
+  
+  
+   <!-- 5 description-->
+   <hr>
+  <div class="w3-container">
+  <h2>Honda creates a new world of motorcycles</h2>
+  <p>Featuring a new concept, the NM4 was developed under the themes of &ldquo;Neo-futuristic&rdquo; and &ldquo;cool,&rdquo; and is now manufactured at Kumamoto Factory and sold in Japan, North America and Europe. Thinking outside the box in constant pursuit of creating new products that previous generations could only imagine, Honda continues to pass on the joy of motorcycle riding to the next generation and the ones to follow..</p>
+</div>
+ 
+ 
+
+  <!-- Pagination description -->
+  <div class="w3-center w3-padding-32">
+    <ul class="w3-pagination">
+      <li><a class="w3-black" href="#">1</a></li>
+      <li><a class="w3-hover-black" href="#">2</a></li>
+      <li><a class="w3-hover-black" href="#">3</a></li>
+      <li><a class="w3-hover-black" href="#">4</a></li>
+      <li><a class="w3-hover-black" href="#">»</a></li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3 schools</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="image/mario.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="image/mario2.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+      </p>
+    </div>
+
+  </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+

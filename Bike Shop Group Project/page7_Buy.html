@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="image/Different-Honda-Logo.png" style="width:45%;" class="w3-round" alt="honda logo"><br><br>
+    <h4 class="w3-padding-0"><b>Welcome to Fictitious Honda Motorcycle </b></h4>
+    <p class="w3-text-grey"> <u>Jay's Group <br></u></p>
+  </div>
+  <a href="page1_Home_Page_v2.html" class="w3-padding">HOME</a>
+  <a href="page3_About.html" class="w3-padding">ABOUT</a>
+  <a href="page5_Login.html" class="w3-padding">LOGIN</a>
+  <a href="page2_Super_Sport.html" class="w3-padding  w3-text-teal">SHOP</a>
+  <a href="page4_Contact.html" class="w3-padding">CONTACT</a>
+   
+  <div class="w3-section w3-padding-top w3-large">
+    <a href="https://www.facebook.com/HondaMotoUK/" target="_blank" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.youtube.com/user/HondaMotorcyclesEU" target="_blank" class="w3-hover-white w3-hover-text-red w3-show-inline-block"><i class="fa fa-youtube"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-grey w3-show-inline-block"><i class="fa fa-google-plus"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-whatsapp"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-grey w3-show-inline-block"><i class="fa fa-wechat"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header class="w3-container">
+    <a href="page1_Home_Page_v2.html"><img src="image/Different-Honda-Logo.png" style="width:65px;" class="w3-round w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <h1><strong><font size="6" color="green" face="Lucida Handwriting"> 1 ORDER INFORMATION</font></strong></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+   <button class="w3-btn">1 ORDER INFORMATION</button>  &#8680;
+      <button class="w3-btn w3-white"> 2  COMPLETE PAYMENT </button> &#8680;
+         <button class="w3-btn w3-white w3-hide-small"> 3 FINISHED</button>
+    </div>
+    <style>
+table, td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+</style>    
+  </header>
+  
+  <!-- 2. photo -->
+<table align="left"> 
+          <td> <img src="image/Matt Gunpowder Black Metallic.jpg" alt="CBR250RR-black" width="100%"> </td>
+          <td> <img src="image/Anchor Grey Metallic.jpg" alt="CBR250RR-yellow" width="100%"> </td>
+          <td> <img src="image/Honda Red Racing.jpg" alt="CBR250RR-red" width="100%"> </td>
+</table>
+
+ <!-- 3. buy details -->
+<hr>
+<div class="w3-container">
+<table align="left">
+      <tr>
+           <h2><b>CBR250RR &#8250; Please select the product you want to buy</b></h2> 
+      </tr>
+      
+      <tr>
+          <td> <b>Expected Price:</b> </td>
+          <td> $ 65,000</td>  
+          <td> <b>Orgin:</b> </td>
+          <td> Japan </td>
+     </tr>
+ 
+      <tr>
+          <td> <b>Publication Date:</b> </td>
+          <td> 2016-2-10 </td
+          ><td> <b>Author:</b> </td>
+          <td> And One </td>
+     </tr>  
+  
+      <tr>
+          <td> <b>Order Quantity:</b> </td>
+          <td> <select id="b"> <option value="1">1</option>
+                        
+                      </select> </td>
+   
+          <td> <b>Color:</b> </td>
+          <td> <select> <option value="1">Matt Gunpowder Black Metallic</option>
+                        <option value="2">Anchor Grey Metallic</option>
+                        <option value="3">Honda Red Racing</option> </select>
+          </td>
+     </tr> 
+      
+</table>
+</div>
+
+  
+
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <ul class="w3-pagination">
+      <li><a class="w3-black" href="page8_Pay.html">Pay Now</a></li>
+    </ul>
+  </div>
+
+
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+

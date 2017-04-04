@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<title>Jay Online Shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-sidenav a,.w3-sidenav h4 {font-weight:bold}
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+.button3 {
+    background-color: white;
+    color: black;
+    border: 2px solid #f44336;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	width: 100%;
+}
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidenav"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="Images/Jay_Advertising_logo.png" style="width:45%;" class="w3-round"><br><br>
+    <h4 class="w3-padding-0"><strong>Jay 2nd hand online shop</strong></h4>
+    <p class="w3-text-grey">Template by W3.CSS - DAGDAG J Adonai 130369824</p>
+  </div>
+  <a href="Assignment 01.html" class="w3-padding">HOME</a>
+  <a href="Assignment 01 page 02.html" class="w3-padding">CLASSIFIEDS</a>
+  <a href="#" class="w3-padding w3-text-teal">POST AD</a>
+  <a href="Assignment 01 page 04.html" class="w3-padding">SIGN UP</a>
+  <a href="#" class="w3-padding">CONTACT US</a>
+   
+  <div class="w3-section w3-padding-top w3-large">
+    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-light-blue w3-show-inline-block"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-youtube"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-instagram"></i></a>
+    <a href="#" class="w3-hover-white w3-hover-text-indigo w3-show-inline-block"><i class="fa fa-google"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header class="w3-container">
+    <a href="#"><img src="img_avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-opennav w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <h1><strong>Post Ad</strong></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+    </div>
+    
+  </header>
+  <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white">
+      <div class="w3-group">
+        <label class="w3-label">Categories </label><br><br>
+        
+        <select>
+          <option>Smartphones</option>
+          <option>Tablets</option>
+          <option>Desktop</option>
+          <option>Laptop</option>
+          <option>Computer Parts</option>
+        </select>
+      </div>
+  
+      <div class="w3-group">
+      <label class="w3-label">Area</label> <br><br>
+			<select>
+			  <option>Hong Kong Island</option>
+			  <option>Kowloon</option>
+			  <option>New Territories</option>
+			  <option>Outlying Islands</option>
+			</select>
+       </div>
+      
+      <div class="w3-group">
+      <label class="w3-label"  type="text">District</label> 
+	  <input class="w3-input" type="text">
+        </div>
+      
+       <div class="w3-group">
+        <label class="w3-label">Price (HKD)</label>
+        <input class="w3-input" type="text">
+      </div>
+      <div class="w3-group">
+        <label class="w3-label">Post Title (40 characters max)</label>
+        <input class="w3-input" type="text">
+      </div>
+      <div class="w3-group">
+        <label class="w3-label">Contact</label>
+        <input class="w3-input" type="text">
+      </div>
+      <div class="w3-group">
+        <label class="w3-label">Telephone</label>
+        <input class="w3-input" type="text">
+      </div>
+      <div class="w3-group">
+        <label class="w3-label">Description/Price</label><br>
+        Please do not post your email address in your ad or it will be rejected without notice. Replies will be sent to your control panel and an email alert sent to you. 
+       <textarea cols="70" rows="10" autofocus wrap="hard"></textarea>  
+      </div>
+      <div class="w3-group">
+        <label class="w3-label">Upload Images</label><br>
+        Max 10 images. Each file size can be 10 MB with a max dimension 6000x4000. <br>
+        <button> Choose File </button>
+      </div>
+      
+      
+     
+      <button type="button" class="w3-btn w3-right w3-theme">Post Ad</button>
+      
+      </form>
+    </div>
+	</div>
+  
+
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-white">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>COMPANY INFO</h3>
+      <p>About Jay</p>
+      <p>Awards/Rankings</p>
+      <p>Hours and Locations</p>
+      <p>Careers</p>
+      <p>Newsletter</p>
+      
+    </div>
+    
+    <div class="w3-third">
+    <h3>MY ACCOUNT</h3>
+    <p>Login/Register</p>
+      <p>Dashboard</p>
+      <p>Messages</p>
+      <br>
+      <h3>COMMUNITY</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <button class="button button3">Forum</button>
+          <span class="w3-large">Discussions and FAQs</span><br>
+        
+        </li>
+        <li class="w3-padding-16">
+          <button class="button button1">Help   </button>
+          <span class="w3-large">24/7Customer Service</span><br>
+          
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">2nd Hand</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Classified</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ads</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Smartphones</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Mobile</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Desktops</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Laptops</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Notebooks</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Posts</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Gadgets</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Technology</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Device</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Jay</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shop</span>
+      </p>
+    </div>
+<div class="w3-third">
+Listen to 24K Magic by Bruno Mars
+<audio controls>
+  <source src="Music/Bruno Mars-24K Magic.mp3" type="audio/mpeg"></source>
+Your browser does not support the audio element.
+</audio>
+</div>
+  </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Slideshow script
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
+
